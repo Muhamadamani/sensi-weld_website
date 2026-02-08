@@ -1,6 +1,6 @@
 import React from 'react';
 // Import the faculty image from your assets folder
-import aerospaceFacultyImg from '../src/assets/aerospace-faculty.png';
+import aerospaceFacultyImg from '../assets/aerospace-faculty.png';
 
 const About: React.FC = () => {
   return (

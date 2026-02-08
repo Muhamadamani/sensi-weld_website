@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 // Import your PNG file
-import sensiLogoPng from '../src/assets/logo.png'; 
+import sensiLogoPng from '../assets/logo.png'; 
 
 const Footer: React.FC = () => {
   return (

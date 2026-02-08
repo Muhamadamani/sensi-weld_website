@@ -1,10 +1,10 @@
 import React from 'react';
 
 // Import your team PNGs here
-import team1 from '../src/assets/team-1.png';
-import team2 from '../src/assets/team-2.png';
-import team3 from '../src/assets/team-3.png';
-import team4 from '../src/assets/team-4.png';
+import team1 from '../assets/team-1.png';
+import team2 from '../assets/team-2.png';
+import team3 from '../assets/team-3.png';
+import team4 from '../assets/team-4.png';
 
 const Team: React.FC = () => {
   const members = [

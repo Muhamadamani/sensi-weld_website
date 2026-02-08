@@ -2,10 +2,10 @@ import React from 'react';
 
 // 1. Import your product and application PNGs here
 // Adjust the paths based on your actual folder structure (e.g., ../assets/)
-import honeycombImg from '../src/assets/honeycomb.png';
-import architectureImg from '../src/assets/architecture.png';
-import automotiveImg from '../src/assets/automotive.png';
-import aerospaceImg from '../src/assets/aerospace.png';
+import honeycombImg from '../assets/honeycomb.png';
+import architectureImg from '../assets/architecture.png';
+import automotiveImg from '../assets/automotive.png';
+import aerospaceImg from '../assets/aerospace.png';
 
 const Product: React.FC = () => {
   const applications = [

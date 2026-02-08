@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import sensiLogoPng from '../src/assets/logo.png'; 
+import sensiLogoPng from '../assets/logo.png'; 
 
 const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 // 1. Import the hero image from your assets folder
-import heroImg from '../src/assets/hero.png';
+import heroImg from '../assets/hero.png';
 
 const Home: React.FC = () => {
   return (
