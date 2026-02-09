@@ -60,9 +60,9 @@ const Team: React.FC = () => {
                  <p className="text-teal font-medium text-xs mt-1 uppercase tracking-wider">{member.role}</p>
                </div>
             </div>
-            <p className="text-gray-400 text-xs leading-relaxed px-2">
+            {/* <p className="text-gray-400 text-xs leading-relaxed px-2">
               {member.bio}
-            </p>
+            </p> */}
           </div>
         ))}
       </div>
