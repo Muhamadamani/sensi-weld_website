@@ -11,25 +11,25 @@ const Team: React.FC = () => {
     {
       name: 'Muhamad Amani',
       role: 'Co-founder',
-      bio: 'PhD Candidate at TU Delft, specialising in bio-based ink formulations and topology optimisation. Driving the technical vision and commercial spin-off.',
+      bio: ' ',
       image: team1
     },
        {
       name: 'Martin Kampinga',
       role: 'Co-founder',
-      bio: 'Programme Manager at SAMXL focusing on sustainable aerospace innovation. Bridging the gap between laboratory research and industry adoption.',
+      bio: ' ',
       image: team4
     },
     {
       name: 'Prof. Kunal Masania',
       role: 'Scientific Advisor',
-      bio: 'Full Professor at TU Delft and expert in advanced manufacturing with multiple successful start-ups in the composite sector.',
+      bio: ' ',
       image: team2
     },
     {
       name: 'Prem Sundaramoorthy',
       role: 'Scientific Advisor',
-      bio: 'Prem Sundaramoorthy is an Associate Professor at TU Delft’s Aerospace Engineering faculty, specializing in space systems such as satellites and CubeSat technologies.',
+      bio: ' ',
       image: team3
     }
  
@@ -60,9 +60,9 @@ const Team: React.FC = () => {
                  <p className="text-teal font-medium text-xs mt-1 uppercase tracking-wider">{member.role}</p>
                </div>
             </div>
-            {/* <p className="text-gray-400 text-xs leading-relaxed px-2">
+            <p className="text-gray-400 text-xs leading-relaxed px-2">
               {member.bio}
-            </p> */}
+            </p>
           </div>
         ))}
       </div>
