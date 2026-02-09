@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="col-span-1 md:col-span-2">
           
-          {/* Logo Link - Text removed and layout simplified */}
+          {/* Logo Link */}
           <Link to="/" className="inline-block mb-8 group">
             <img 
               src={sensiLogoPng} 
@@ -37,9 +37,25 @@ const Footer: React.FC = () => {
         <div>
           <h4 className="text-xs font-bold text-white mb-6 uppercase tracking-widest text-purple">Network</h4>
           <ul className="space-y-3">
-            <li><a href="#" className="text-gray-400 text-sm hover:text-teal transition-colors">LinkedIn</a></li>
-            <li><a href="#" className="text-gray-400 text-sm hover:text-teal transition-colors">Twitter</a></li>
-            <li><a href="mailto:info@sensiweld.com" className="text-gray-400 text-sm hover:text-teal transition-colors">Email Us</a></li>
+            <li>
+              <a 
+                href="https://www.linkedin.com/company/sensiweld" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 text-sm hover:text-teal transition-colors"
+              >
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              {/* Linked to internal Contact page instead of mailto: */}
+              <Link 
+                to="/contact" 
+                className="text-gray-400 text-sm hover:text-teal transition-colors"
+              >
+                Email Us
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
