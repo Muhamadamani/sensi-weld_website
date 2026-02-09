@@ -10,7 +10,7 @@ const Team: React.FC = () => {
   const members = [
     {
       name: 'Muhamad Amani',
-      role: 'Founder',
+      role: 'Venture Lead',
       bio: ' ',
       image: team1
     },
