@@ -4,16 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SensiWeld | Adhesive-Free Smart Joints</title>
-    
-    <meta name="description" content="Revolutionising structural integrity in natural composites with adhesive-free smart joints. Born from TU Delft research.">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/png" href="/favicon.png" />
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-
     <script>
         tailwind.config = {
             theme: {
@@ -24,14 +17,11 @@
                         teal: '#2abca1',
                         forest: '#4d8176',
                     },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
                 }
             }
         }
     </script>
-
+    
     <style>
         :root {
             --purple: #7e60a9;
@@ -39,37 +29,30 @@
             --forest: #4d8176;
             --dark: #0b0f1a;
         }
-        body {
-            background-color: var(--dark);
-            color: white;
-            margin: 0;
-            overflow-x: hidden;
-        }
-        .glass {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .glass-dark {
-            background: rgba(11, 15, 26, 0.8);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        }
+        body { background-color: var(--dark); color: white; margin: 0; }
         .text-gradient {
             background: linear-gradient(to right, var(--teal), var(--purple));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .btn-primary {
-            background: linear-gradient(135deg, var(--teal), var(--forest));
-            transition: all 0.3s ease;
+        .btn-primary { background: linear-gradient(135deg, var(--teal), var(--forest)); }
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
     </style>
 </head>
-<body class="min-h-screen selection:bg-teal selection:text-dark">
+<body class="min-h-screen">
     <div id="root"></div>
+
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <select name="category"></select>
+      <textarea name="message"></textarea>
+    </form>
+
     <script type="module" src="/src/index.tsx"></script>
 </body>
 </html>
