@@ -16,7 +16,7 @@ const Team: React.FC = () => {
     },
        {
       name: 'Martin Kampinga',
-      role: 'Co-founder',
+      role: 'Buisniness Advisor',
       bio: ' ',
       image: team4
     },
