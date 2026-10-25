@@ -3,54 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SensiWeld | Adhesive-Free Smart Joints</title>
+    <title>SensiWeld | Composites that Nature Loves</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/png" href="/favicon.png" />
-    
+
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         dark: '#0b0f1a',
+                        navy: '#0D2318',
                         purple: '#7e60a9',
                         teal: '#2abca1',
                         forest: '#4d8176',
+                        mint: '#D3EFE5',
+                        cream: '#F5FBF8',
+                        sage: '#EDF7F3',
                     },
                 }
             }
         }
     </script>
-    
+
     <style>
         :root {
             --purple: #7e60a9;
-            --teal: #2abca1;
+            --teal:   #2abca1;
             --forest: #4d8176;
-            --dark: #0b0f1a;
+            --dark:   #0b0f1a;
+            --navy:   #0D2318;
+            --mint:   #D3EFE5;
+            --cream:  #F5FBF8;
+            --sage:   #EDF7F3;
         }
-        body { background-color: var(--dark); color: white; margin: 0; }
+        body { background-color: var(--cream); color: var(--navy); margin: 0; }
+
         .text-gradient {
-            background: linear-gradient(to right, var(--teal), var(--purple));
+            background: linear-gradient(to right, var(--teal), var(--forest));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .btn-primary { background: linear-gradient(135deg, var(--teal), var(--forest)); }
-        .glass {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+        .btn-primary {
+            background: linear-gradient(135deg, var(--teal), var(--forest));
         }
-    </style>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7L3BEPMWQ2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        .glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(211, 239, 229, 0.9);
+            box-shadow: 0 2px 20px rgba(42, 188, 161, 0.05);
+        }
+        .glass-dark {
+            background: rgba(245, 251, 248, 0.95);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(211, 239, 229, 0.8);
+            box-shadow: 0 2px 20px rgba(42, 188, 161, 0.08);
+        }
 
-  gtag('config', 'G-7L3BEPMWQ2');
-</script>
+        /* Independent Brownian blob animations — each blob takes its own random path */
+        @keyframes blob1 {
+            0%   { transform: translate(0px,   0px)   scale(1);    }
+            15%  { transform: translate(52px, -38px)  scale(1.06); }
+            32%  { transform: translate(-40px, 28px)  scale(0.94); }
+            48%  { transform: translate(22px,  60px)  scale(1.03); }
+            65%  { transform: translate(-58px,-14px)  scale(0.97); }
+            80%  { transform: translate(34px, -52px)  scale(1.05); }
+            100% { transform: translate(0px,   0px)   scale(1);    }
+        }
+        @keyframes blob2 {
+            0%   { transform: translate(0px,   0px)   scale(1);    }
+            18%  { transform: translate(-44px, 56px)  scale(1.07); }
+            36%  { transform: translate(60px, -22px)  scale(0.93); }
+            54%  { transform: translate(-28px,-48px)  scale(1.04); }
+            72%  { transform: translate(46px,  32px)  scale(0.96); }
+            88%  { transform: translate(-16px, 18px)  scale(1.02); }
+            100% { transform: translate(0px,   0px)   scale(1);    }
+        }
+        @keyframes blob3 {
+            0%   { transform: translate(0px,   0px)   scale(1);    }
+            20%  { transform: translate(36px,  48px)  scale(0.95); }
+            40%  { transform: translate(-62px,-30px)  scale(1.08); }
+            58%  { transform: translate(48px, -56px)  scale(0.92); }
+            76%  { transform: translate(-22px, 44px)  scale(1.05); }
+            90%  { transform: translate(14px, -20px)  scale(0.98); }
+            100% { transform: translate(0px,   0px)   scale(1);    }
+        }
+        @keyframes blob4 {
+            0%   { transform: translate(0px,   0px)   scale(1);    }
+            22%  { transform: translate(-38px, 62px)  scale(1.05); }
+            44%  { transform: translate(54px, -18px)  scale(0.93); }
+            66%  { transform: translate(-20px,-54px)  scale(1.07); }
+            84%  { transform: translate(42px,  30px)  scale(0.96); }
+            100% { transform: translate(0px,   0px)   scale(1);    }
+        }
+        @keyframes blob5 {
+            0%   { transform: translate(0px,   0px)   scale(1);    }
+            25%  { transform: translate(60px,  40px)  scale(0.91); }
+            50%  { transform: translate(-50px, 20px)  scale(1.09); }
+            75%  { transform: translate(24px, -60px)  scale(0.95); }
+            100% { transform: translate(0px,   0px)   scale(1);    }
+        }
+        @keyframes blob6 {
+            0%   { transform: translate(0px,   0px)   scale(1);    }
+            18%  { transform: translate(44px, -50px)  scale(1.06); }
+            38%  { transform: translate(-60px, 24px)  scale(0.94); }
+            58%  { transform: translate(28px,  56px)  scale(1.04); }
+            78%  { transform: translate(-34px,-28px)  scale(0.97); }
+            100% { transform: translate(0px,   0px)   scale(1);    }
+        }
+        @keyframes blob7 {
+            0%   { transform: translate(0px,   0px)   scale(1);    }
+            30%  { transform: translate(-56px,-40px)  scale(1.08); }
+            55%  { transform: translate(40px,  52px)  scale(0.92); }
+            80%  { transform: translate(-18px, 30px)  scale(1.03); }
+            100% { transform: translate(0px,   0px)   scale(1);    }
+        }
+        .animate-blob1 { animation: blob1 22s ease-in-out infinite; }
+        .animate-blob2 { animation: blob2 29s ease-in-out infinite; }
+        .animate-blob3 { animation: blob3 35s ease-in-out infinite; }
+        .animate-blob4 { animation: blob4 26s ease-in-out infinite; }
+        .animate-blob5 { animation: blob5 19s ease-in-out infinite; }
+
+        /* Fiber drift animations — subtle translate so lines stay readable */
+        @keyframes fib1 {
+            0%, 100% { transform: translate(0px, 0px); }
+            40%       { transform: translate(14px, -20px); }
+            70%       { transform: translate(-10px, 12px); }
+        }
+        @keyframes fib2 {
+            0%, 100% { transform: translate(0px, 0px); }
+            35%       { transform: translate(-18px, 14px); }
+            68%       { transform: translate(12px, -16px); }
+        }
+        @keyframes fib3 {
+            0%, 100% { transform: translate(0px, 0px); }
+            45%       { transform: translate(20px, 10px); }
+            78%       { transform: translate(-14px, -18px); }
+        }
+        @keyframes fib4 {
+            0%, 100% { transform: translate(0px, 0px); }
+            30%       { transform: translate(-12px, -22px); }
+            62%       { transform: translate(16px, 14px); }
+        }
+        @keyframes fib5 {
+            0%, 100% { transform: translate(0px, 0px); }
+            50%       { transform: translate(22px, -12px); }
+            82%       { transform: translate(-18px, 20px); }
+        }
+        @keyframes fib6 {
+            0%, 100% { transform: translate(0px, 0px); }
+            38%       { transform: translate(16px, 22px); }
+            72%       { transform: translate(-20px, -10px); }
+        }
+        @keyframes fib7 {
+            0%, 100% { transform: translate(0px, 0px); }
+            42%       { transform: translate(-24px, 16px); }
+            76%       { transform: translate(18px, -22px); }
+        }
+        .animate-fib1 { animation: fib1 28s ease-in-out infinite; }
+        .animate-fib2 { animation: fib2 23s ease-in-out infinite; }
+        .animate-fib3 { animation: fib3 33s ease-in-out infinite; }
+        .animate-fib4 { animation: fib4 19s ease-in-out infinite; }
+        .animate-fib5 { animation: fib5 26s ease-in-out infinite; }
+        .animate-fib6 { animation: fib6 31s ease-in-out infinite; }
+        .animate-fib7 { animation: fib7 21s ease-in-out infinite; }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7L3BEPMWQ2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-7L3BEPMWQ2');
+    </script>
 </head>
 <body class="min-h-screen">
     <div id="root"></div>

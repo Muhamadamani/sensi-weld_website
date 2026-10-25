@@ -8,6 +8,7 @@ import About from './pages/About';
 import Product from './pages/Product';
 import Team from './pages/Team';
 import Contact from './pages/Contact';
+import Applications from './pages/Applications';
 
 const App: React.FC = () => {
   const location = useLocation();
@@ -26,6 +27,7 @@ const App: React.FC = () => {
           <Route path="/about" element={<About />} />
           <Route path="/product" element={<Product />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/applications" element={<Applications />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
