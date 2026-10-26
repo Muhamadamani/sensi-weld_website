@@ -33,13 +33,12 @@ const About: React.FC = () => {
 
           <div className="relative group">
             <div className="absolute -inset-2 bg-gradient-to-br from-teal/10 to-mint blur-xl opacity-50 group-hover:opacity-100 transition-opacity duration-700 rounded-3xl" />
-            <div className="relative glass rounded-[2.5rem] overflow-hidden border border-mint aspect-square shadow-sm">
+            <div className="relative glass rounded-[2.5rem] overflow-hidden border border-mint shadow-sm">
               <img
                 src={aboutImg}
                 alt="Ultrasonic welding of natural-fibre composites"
-                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100"
+                className="w-full h-auto object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy/50 via-transparent to-transparent pointer-events-none" />
             </div>
           </div>
         </div>
