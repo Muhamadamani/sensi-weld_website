@@ -1,5 +1,5 @@
 import React from 'react';
-import aerospaceFacultyImg from '../assets/aerospace-faculty.png';
+import aboutImg from '../assets/about.JPG';
 import { Link } from 'react-router-dom';
 
 const About: React.FC = () => {
@@ -35,16 +35,11 @@ const About: React.FC = () => {
             <div className="absolute -inset-2 bg-gradient-to-br from-teal/10 to-mint blur-xl opacity-50 group-hover:opacity-100 transition-opacity duration-700 rounded-3xl" />
             <div className="relative glass rounded-[2.5rem] overflow-hidden border border-mint aspect-square shadow-sm">
               <img
-                src={aerospaceFacultyImg}
-                alt="TU Delft Faculty of Aerospace Engineering"
+                src={aboutImg}
+                alt="Ultrasonic welding of natural-fibre composites"
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100"
-                onError={(e) => { (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=800' }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/50 via-transparent to-transparent pointer-events-none" />
-              <div className="absolute bottom-6 left-6">
-                <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-mint">Delft, Netherlands</p>
-                <p className="text-white font-bold text-sm">Faculty of Aerospace Engineering</p>
-              </div>
             </div>
           </div>
         </div>
