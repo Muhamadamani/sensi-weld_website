@@ -24,7 +24,7 @@ const About: React.FC = () => {
           <div>
             <h2 className="text-2xl font-bold mb-5 text-purple">The Origin</h2>
             <p className="text-navy/60 leading-relaxed mb-4">
-              Natural-fibre composites offer real sustainability advantages, but joining them has always relied on fossil-based adhesives that undermine those gains. We set out to fix the bondline.
+              Natural-fibre composites offer real sustainability advantages, but joining them has always relied on fossil-based adhesives that work against the very purpose of using natural fibres. We set out to fix the bondline.
             </p>
             <p className="text-navy/60 leading-relaxed">
               Our bio-based adhesive comes from paper-industry waste. Alongside it, ultrasonic welding brings weld cycles down from hours to seconds.
