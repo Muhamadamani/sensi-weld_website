@@ -87,7 +87,7 @@ const Product: React.FC = () => {
       {/* Interactive Technology Stepper */}
       <section className="py-20 px-6 bg-sage">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-purple text-center mb-16">Four Technology Routes</h2>
+          <h2 className="text-3xl font-bold text-purple text-center mb-16">Three Technology Routes</h2>
 
           {/* Step indicators with connecting line */}
           <div className="relative flex items-start justify-between mb-10 px-4">
