@@ -192,7 +192,7 @@ const Home: React.FC = () => {
             <span style={{ color: 'rgb(118,97,165)' }}>Composites</span> <span className="text-navy/30">that</span> <span className="text-gradient">Nature Loves</span>
           </h1>
           <p className="text-lg md:text-xl text-navy/60 mb-10 max-w-3xl mx-auto leading-relaxed">
-            SensiWeld develops bio-based adhesives derived from paper-industry by-products for natural-fibre composites, with hot-press bonding and ultrasonic joining routes.
+            SensiWeld develops bio-based adhesives derived from paper-industry by-products for natural-fibre composites, with conventional and ultrasonic joining routes.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link to="/contact" className="btn-primary w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-white text-base shadow-lg shadow-teal/20 hover:shadow-teal/40 transition-all">
@@ -245,7 +245,7 @@ const Home: React.FC = () => {
                 icon: '⏱',
                 title: 'Slow Curing',
                 teaser: 'Cure times limit throughput and add energy cost.',
-                detail: 'Hot-press cycles run from minutes to hours. Ultrasonic welding brings that down to seconds.',
+                detail: 'Conventional curing cycles run from minutes to hours. Ultrasonic welding brings that down to seconds.',
                 accent: 'bg-orange-400',
                 bg: 'bg-orange-50',
                 border: 'border-orange-200',
